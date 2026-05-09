@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wedding Biodata – Form</title>
+  <title>Matrimonial Biodata – Form</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -277,7 +277,7 @@
     </svg>
   </div>
   <div class="kalwar-title">🎊 कलवार वैवाहिकी 🎊</div>
-  <h1>Wedding Biodata</h1>
+  <h1>Matrimonial Biodata</h1>
   <p>Fill in the details below</p>
   <div class="header-line"></div>
 </header>
@@ -961,55 +961,6 @@
 
 <div id="biodataOutput" style="position:fixed;top:0;left:-9999px;z-index:9999;"></div>
 
-<!-- ══ TEST DATA — REMOVE BEFORE COMMIT ══ -->
-<script>
-  (function prefillTestData() {
-    const f = n => document.querySelector(`[name="${n}"]`);
-    const set = (name, val) => { const el = f(name); if (el && !el.readOnly) el.value = val; };
-    const sel = (name, val) => { const el = f(name); if (el) el.value = val; };
-
-    set('name',        'Anusha Kumari');
-    sel('gender',      'Female');
-    set('dob',         '2003-01-15');
-    set('tob',         '9:00 AM');
-    set('pob',         'Sitamarhi, Bihar');
-    set('native',      'Sitamarhi, Bihar');
-    set('rashi',       'Makara (Capricorn)');
-    set('height',      '5 feet 4 inches (163 cm)');
-    sel('marital',     'Single');
-    set('motherTongue','Hindi');
-    set('subCaste',    'Byahut');
-    set('gotra',       'Kashyap');
-    set('moolBaan',    'Badahariya ke Paande');
-    sel('manglik',     'No');
-    sel('complexion',  'Very Fair');
-
-    set('education',   'B.E. in Electronics & Communication (2024 Passout)');
-    set('college',     'Dayananda Sagar Academy of Technology and Management, Bengaluru');
-    set('school10',    'Bangalore International Public School, Bengaluru (2018 Passout)');
-    set('school12',    'City Composite PU College, Bengaluru (2020 Passout)');
-    set('job',         'Order Management Associate');
-    set('org',         'Postman, Bengaluru');
-    set('income',      '5 - 10 LPA');
-
-    set('fatherName',  'Sanjay Kumar Raja');
-    set('fatherOcc',   'Businessman, ex-IT professional');
-    set('motherName',  'Manju Kumari');
-    set('motherOcc',   'Business');
-    set('businessName','Waterflow Lines, Bengaluru');
-    set('siblingName', 'Ishan Kumar Raja');
-    set('siblingOcc',  'Software Engineer in LightCast, Chennai (2025 Passout from NIT Dimapur)');
-    set('grandFather', 'Late. Shri Kamal Prasad');
-    set('grandMother', 'Late. Shrimati Shanti Devi');
-    set('uncle',       'Rajeev Kumar (W ji), Businessman in Sitamarhi');
-    set('aunt',        'Babita Devi');
-
-    set('phone',       '9900396640');
-    set('address',     'Saketh Hillside, Sree Gurudatia Layout, Hosakerehalli, Hosakerehalli Katriguppe, Bengaluru, Karnataka - 560085');
-    set('email',       'Sanjaykraja@gmail.com');
-  })();
-</script>
-<!-- ══ END TEST DATA ══ -->
 
 </body>
 </html>
