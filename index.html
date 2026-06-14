@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matrimonial Biodata – Form</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&family=Roboto+Condensed:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&family=Noto+Sans+Devanagari:wght@400;650;700;800;900&family=Noto+Serif+Devanagari:wght@600;700&family=Roboto+Condensed:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -560,7 +560,7 @@
           alt="Ganesh"
         />
       </div>
-      <div class="mantra">।।ॐ गं गणपतए नमः।।</div>
+      <div class="mantra">।।ॐ गं गणपतये नमः।।</div>
       <div class="kalwar-title">🎊 कलवार वैवाहिकी 🎊</div>
       <div class="mantra" style="margin-bottom: 0rem">📞-7050510511</div>
       <h1>Matrimonial Biodata</h1>
@@ -1290,7 +1290,10 @@
           await Promise.all([
             document.fonts.load("700 17px 'Roboto Condensed'"),
             document.fonts.load("800 20px 'Roboto Condensed'"),
+            document.fonts.load("600 19px 'Noto Serif Devanagari'"),
+            document.fonts.load("650 25.6px 'Noto Sans Devanagari'"),
           ]);
+          await document.fonts.ready;
         }
 
         const corner = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" width="75" height="75">
@@ -1353,22 +1356,22 @@
         const css = `<style>
       .bp { width:794px; height:1123px; background:#fff; position:relative; overflow:hidden; font-family:'Roboto Condensed','Arial Narrow',Arial,sans-serif; box-sizing:border-box; }
       .pc { position:absolute; top:32px; left:34px; right:34px; bottom:32px; overflow:hidden; }
-      .pc > div:first-child img { width:80px !important; height:80px !important; object-fit:contain; }
+      .pc > div:first-child img { width:80px !important; height:80px !important; object-fit:contain; display:block; margin:0 auto; }
       table { border-collapse:collapse; width:calc(100% - 12px); margin-left:12px; }
     </style>`;
 
         // ── Page headers ──────────────────────────────────────────────────────────
         const p1Header = `
-      <div style="text-align:center;margin-bottom:-8px;"><img src="Ganesh-jee%20photo-1.png" style="width:65px;height:65px;object-fit:contain;" alt="Ganesh"/></div>
-      <div style="text-align:center;font-family:'Noto Sans Devanagari','Mangal',sans-serif;font-size:15px;color:#a96800;letter-spacing:0;font-weight:800;margin-right:5px;margin-bottom:3px;">।।ॐ गं गणपतए नमः।।</div>
-      <div style="text-align:center;font-family:'Noto Sans Devanagari','Mangal',sans-serif;font-size:24px;color:${gold};letter-spacing:0;font-weight:900;">🎊 कलवार वैवाहिकी 🎊</div>
+      <div style="text-align:center;line-height:0;margin-bottom:0;"><img src="Ganesh-jee%20photo-1.png" style="width:80px;height:80px;object-fit:contain;display:block;margin:0 auto;" alt="Ganesh"/></div>
+      <div style="text-align:center;font-family:'Noto Serif Devanagari','Noto Sans Devanagari','Mangal',serif;font-size:19px;line-height:1;color:#a96800;letter-spacing:0;font-weight:600;margin-bottom:0;">।।ॐ गं गणपतये नमः।।</div>
+      <div style="text-align:center;font-family:'Noto Sans Devanagari','Mangal',sans-serif;font-size:25.6px;color:${gold};letter-spacing:0;font-weight:650;">🎊 कलवार वैवाहिकी 🎊</div>
       <div style="text-align:center;font-family:'Noto Sans Devanagari','Mangal',sans-serif;font-size:15px;color:#a96800;letter-spacing:0;font-weight:800;">📞-7050510511</div>
       <div style="text-align:center;margin-bottom:5px;">${hOrnament}</div>`;
 
         const pNHeader = `
-      <div style="text-align:center;margin-bottom:-8px;"><img src="Ganesh-jee%20photo-1.png" style="width:65px;height:65px;object-fit:contain;" alt="Ganesh"/></div>
-      <div style="text-align:center;font-family:'Noto Sans Devanagari','Mangal',sans-serif;font-size:15px;color:#a96800;letter-spacing:0;font-weight:800;margin-right:5px;margin-bottom:3px;">।।ॐ गं गणपतए नमः।।</div>
-      <div style="text-align:center;font-family:'Noto Sans Devanagari','Mangal',sans-serif;font-size:24px;color:${gold};letter-spacing:0;font-weight:900;">🎊 कलवार वैवाहिकी 🎊</div>
+      <div style="text-align:center;line-height:0;margin-bottom:0;"><img src="Ganesh-jee%20photo-1.png" style="width:80px;height:80px;object-fit:contain;display:block;margin:0 auto;" alt="Ganesh"/></div>
+      <div style="text-align:center;font-family:'Noto Serif Devanagari','Noto Sans Devanagari','Mangal',serif;font-size:19px;line-height:1;color:#a96800;letter-spacing:0;font-weight:600;margin-bottom:0;">।।ॐ गं गणपतये नमः।।</div>
+      <div style="text-align:center;font-family:'Noto Sans Devanagari','Mangal',sans-serif;font-size:25.6px;color:${gold};letter-spacing:0;font-weight:650;">🎊 कलवार वैवाहिकी 🎊</div>
       <div style="text-align:center;font-family:'Noto Sans Devanagari','Mangal',sans-serif;font-size:15px;color:#a96800;letter-spacing:0;font-weight:800;">📞-7050510511</div>`;
 
         // ── Content sections ──────────────────────────────────────────────────────
